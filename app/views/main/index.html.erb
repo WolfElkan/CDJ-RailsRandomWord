@@ -1,0 +1,10 @@
+<body>
+	<center>
+		<span class="header">Random Word (attempt #<%= @attempt %>)</span>
+		<div class="word"><%= @word %></div>
+		<form method="post">
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<input type="submit" value="Generate">
+		</form>
+	</center>
+</body>
